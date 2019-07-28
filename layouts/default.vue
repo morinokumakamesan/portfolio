@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app light style="background: #F5F5F5">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -29,7 +29,7 @@
     <!-- 画面サイズsm以下時のヘッダー -->
     <v-toolbar
       :clipped-left="clipped"
-      color="grey lighten-5"
+      color="grey lighten-4"
       fixed
       flat
       app
@@ -49,7 +49,7 @@
     <!-- 画面サイズmd以上時のヘッダー -->
     <v-toolbar
       :clipped-left="clipped"
-      color="grey lighten-5"
+      color="grey lighten-4"
       fixed
       flat
       app
@@ -60,48 +60,21 @@
     <v-layout row justify-center>
       <v-toolbar-title v-text="title"/>
     </v-layout>
-    <template #extension>
-    <v-layout row justify-center>
-      <v-btn 
-        v-for="(btn, i) in btns"
-        :key="i"
-        :to="btn.to"
-        color="teal darken-1"
-        router
-        flat
-        exact
-      >
-      {{ btn.title }}
-      </v-btn>
-      
-      <!--
-      <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>{{ `chevron_${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn>
-      <v-toolbar-title 
-        v-text="title"
-        class="hidden-sm-and-up"
-      />
-      -->
-      <!-- <v-spacer /> -->
-    </v-layout>
-    </template>
+      <template #extension>
+        <v-layout row justify-center>
+          <v-btn 
+            v-for="(btn, i) in btns"
+            :key="i"
+            :to="btn.to"
+            color="teal darken-1"
+            router
+            flat
+            exact
+          >
+          {{ btn.title }}
+          </v-btn>
+        </v-layout>
+      </template>
     </v-toolbar>
 
 
@@ -130,8 +103,11 @@
     <v-footer
       :fixed="fixed"
       app
+      color="grey lighten-3"
     >
-      <span>&copy; 2019</span>
+      <v-layout justify-center>
+        <span>&copy; 2019 morinokumakamesan</span>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
@@ -167,6 +143,10 @@ export default {
         {
           title: 'web',
           to: '/web'
+        },
+        {
+          title: 'Data Science',
+          to: '/data_science'
         },
         {
           title: 'cad',
