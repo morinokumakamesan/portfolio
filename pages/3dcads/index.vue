@@ -1,19 +1,24 @@
 <template>
-  <v-layout>
-    <v-flex text-xs-center>
-      <img
-        src="/v.png"
-        alt="Vuetify.js"
-        class="mb-5"
-      >
-      <blockquote class="blockquote">
-        &#8220;3dcads&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
+  <v-layout
+    column
+    justify-center
+    align-center
+  >
+    <v-flex
+      xs12
+    >
     </v-flex>
   </v-layout>
 </template>
+
+<script>
+import Logo from '~/components/Logo.vue'
+import VuetifyLogo from '~/components/VuetifyLogo.vue'
+
+export default {
+  components: {
+    Logo,
+    VuetifyLogo
+  }
+}
+</script>

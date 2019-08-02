@@ -1,5 +1,5 @@
 <template>
-  <v-app light style="background: #F5F5F5">
+  <v-app light style="background: #EEEEEE">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -29,7 +29,7 @@
     <!-- 画面サイズsm以下時のヘッダー -->
     <v-toolbar
       :clipped-left="clipped"
-      color="grey lighten-4"
+      color="grey lighten-3"
       fixed
       flat
       app
@@ -49,7 +49,7 @@
     <!-- 画面サイズmd以上時のヘッダー -->
     <v-toolbar
       :clipped-left="clipped"
-      color="grey lighten-4"
+      color="grey lighten-3"
       fixed
       flat
       app
@@ -58,7 +58,7 @@
       class="hidden-sm-and-down"
     >
     <v-layout row justify-center>
-      <v-toolbar-title v-text="title"/>
+      <v-toolbar-title class="headline" v-text="title"/>
     </v-layout>
       <template #extension>
         <v-layout row justify-center>
@@ -83,27 +83,10 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>
-              compare_arrows
-            </v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer
       :fixed="fixed"
       app
-      color="grey lighten-3"
+      color="grey lighten-2"
     >
       <v-layout justify-center>
         <span>&copy; 2019 morinokumakamesan</span>
@@ -122,13 +105,23 @@ export default {
       items: [
         {
           icon: 'apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
           icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'web',
+          to: '/web'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'data_science',
+          to: '/data_science'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'cad',
+          to: '/3dcads'
         }
       ],
       btns: [
@@ -154,9 +147,8 @@ export default {
         }
       ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'kame\'s portfolio'
+      right: false,
+      title: 'portfolio'
     }
   }
 }

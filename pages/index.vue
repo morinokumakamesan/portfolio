@@ -10,19 +10,8 @@
     >
       <div class="text-xs-center">
         <logo />
-        <p>morinokumakamesan</p>
+        <p class="title" style="margin: 2% 0 6%">morinokumakamesan</p>
       </div>
-      <v-flex
-        pb-4
-      >
-        <v-card
-          flat
-        >
-          <v-card-text>
-            Webやデザイン，データサイエンスに興味があります
-          </v-card-text>
-        </v-card>
-      </v-flex>
       <v-layout
         row
         justify-center
@@ -36,28 +25,31 @@
           sm6
           md4
           pb-4
+          justify-center
         >
-          <v-hover>
-            <v-card
-              slot-scope="{ hover }"
-              :class="`elevation-${hover ? 12 : 2}`"
-              class="mx-auto"
-              width="80%"
-            >
-              <v-img
-                :src="menu.src"
-              ></v-img>
-              <v-card-title>
-                <div>
-                  <span class="headline">{{ menu.title }}</span>
-                </div>
-                <v-spacer />
-                <v-btn icon class="mr-0">
-                  <v-icon>mdi-chevron-right</v-icon>
-                </v-btn>
-              </v-card-title>
-            </v-card>
-          </v-hover>
+          <NuxtLink :to="menu.link" style="text-decoration: none;">
+            <v-hover>
+              <v-card
+                slot-scope="{ hover }"
+                :class="`elevation-${hover ? 12 : 2}`"
+                class="mx-auto"
+                width="80%"
+              >
+                <v-img
+                  :src="menu.src"
+                ></v-img>
+                <v-card-title>
+                  <div>
+                    <span class="headline">{{ menu.title }}</span>
+                  </div>
+                  <v-spacer />
+                  <v-btn icon class="mr-0">
+                    <v-icon>mdi-chevron-right</v-icon>
+                  </v-btn>
+                </v-card-title>
+              </v-card>
+            </v-hover>
+          </NuxtLink>
         </v-flex>
       </v-layout>
     </v-flex>
@@ -79,14 +71,17 @@ export default {
         {
           title: 'web',
           src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
+          link: "/web"
         },
         {
           title: 'data science',
           src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
+          link: "/data_science"
         },
         {
           title: 'CAD',
           src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
+          link: "3dcads"
         },
       ]
     }
