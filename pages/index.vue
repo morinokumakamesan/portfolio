@@ -69,18 +69,13 @@ export default {
     return {
       menus: [
         {
-          title: 'web',
-          src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
-          link: "/web"
+          title: 'app',
+          src: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+          link: "/app"
         },
         {
-          title: 'data science',
-          src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
-          link: "/data_science"
-        },
-        {
-          title: 'CAD',
-          src: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',
+          title: '3DCAD',
+          src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
           link: "3dcads"
         },
       ]

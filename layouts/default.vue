@@ -110,13 +110,8 @@ export default {
         },
         {
           icon: 'bubble_chart',
-          title: 'web',
-          to: '/web'
-        },
-        {
-          icon: 'bubble_chart',
-          title: 'data_science',
-          to: '/data_science'
+          title: 'app',
+          to: '/app'
         },
         {
           icon: 'bubble_chart',
@@ -134,12 +129,8 @@ export default {
           to: '/about'
         },
         {
-          title: 'web',
-          to: '/web'
-        },
-        {
-          title: 'Data Science',
-          to: '/data_science'
+          title: 'app',
+          to: '/app'
         },
         {
           title: 'cad',

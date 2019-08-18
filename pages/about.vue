@@ -7,8 +7,8 @@
       xs12
       v-for="(profile, i) in profiles"
       :key="i"
-      mt-5
-      mb-2
+      mt-4
+      mb-1
     >
       <v-layout
         wrap
@@ -27,14 +27,35 @@
           sm6
           xs12
         >
-          <v-card flat color="grey lighten-3" style="white-space:normal; word-wrap:break-word;">
-            <v-card-text class="content" v-if="profile.contact">{{ profile.content_1 }} <br><br> hoge</v-card-text>
-            <v-card-text class="content" v-else>
-              {{ profile.content_1 }}
-              <br>
-              {{ profile.content_2 }}
-            </v-card-text>
+          <v-card flat color="grey lighten-3" style="white-space:pre-line; word-wrap:break-word;">
+            <v-card-text class="content" v-if="profile.contact">{{ profile.content }} <br><br> hoge</v-card-text>
+            <v-card-text class="content" v-else-if="!profile.history" >{{ profile.content }}</v-card-text>
           </v-card>
+          <!-- 4th -->
+          <v-timeline dense v-if="profile.history">
+            <!--
+            <v-timeline-item
+              fill-dot
+              class="pink--text mb-12"
+              color="pink"
+            >
+              <div class="py-1">
+                <h2 class="title">2016（4th year University student）</h2>
+              </div>
+            </v-timeline-item>
+            -->
+            <v-timeline-item
+              v-for="(time, i) in times"
+              :key="i"
+              :color="time.color"
+              :small="time.small"
+              :fill-dot="time.fill"
+            >
+              <div class="py-1">
+                <h2 :class="`${time.activeClass} ${time.color}--text text--darken-3`">{{ time.title }}</h2>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
         </v-flex>
       </v-layout>
     </v-flex>
@@ -58,23 +79,81 @@ export default {
       profiles: [
         {
           title: 'about',
-          content_1: `熊本育ち.`,
-          content_2: `現在IoTスマートホームの商用化に携わりながら，趣味で3DCADを触っています．`,
-          contact: false
+          content: `熊本育ち．東京在住．
+            現在IoTスマートホームの商用化に携わりながら，趣味で3DCADやデータサイエンスを触っています．`,
+          contact: false,
+          history: false,
         },
         {
           title: 'skill',
-          content_1: `HTML, CSS, Vue, Nuxt, JQuery, Ruby, Rails, Python, XD, Fusion360`,
-          content_2: "",
-          contact: false
+          content: `HTML, CSS, Vue, Nuxt, JQuery, Ruby, Rails, Python, XD, Fusion360`,
+          contact: false,
+          history: false,
         },
         {
           title: 'contact',
-          content_1: `morinokumakamesan[at]gmail.com`,
-          content_2: "",
-          contact: true
+          content: `morinokumakamesan[at]gmail.com`,
+          contact: true,
+          history: false,
         },
-      ]
+        {
+          title: 'history',
+          content: "",
+          contact: false,
+          history: true,
+        },
+      ],
+      times: [
+        {
+          color: 'teal',
+          small: false,
+          fill: false,
+          activeClass: 'year',
+          title: '2017',
+        },
+        {
+          color: 'teal',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'SPAJAM出場',
+        },
+        {
+          color: 'light-green',
+          small: false,
+          fill: false,
+          activeClass: 'year',
+          title: '2018',
+        },
+        {
+          color: 'light-green',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'SPAJAM出場（優秀賞受賞）',
+        },
+        {
+          color: 'light-green',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'JPHACKS出場（ローカルスポンサー賞受賞）',
+        },
+        {
+          color: 'lime',
+          small: false,
+          fill: false,
+          activeClass: 'year',
+          title: '2019',
+        },
+        {
+          color: 'lime',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'XRジャム出場（マイスターギルド賞，オニチク賞受賞）',
+        },
+      ],
     }
   }
 }
@@ -82,5 +161,11 @@ export default {
 <style lang="scss">
 .content {
   font-size: 18px;
+}
+.year {
+  font-size: 20px;
+}
+.timeContent {
+  font-size: 16px;
 }
 </style>

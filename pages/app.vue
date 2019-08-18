@@ -7,9 +7,9 @@
     <v-flex
       xs12
     >
-      <v-content class="display-3">
+      <v-content class="display-2">
         <em>
-          No Contents
+          Oops! No Contents...
         </em>
       </v-content>
     </v-flex>
