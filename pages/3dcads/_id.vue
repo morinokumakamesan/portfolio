@@ -7,22 +7,9 @@
       text-xs-center
       md8
     >
+      <h2 style="margin: 3% 0 2%">* {{ cad.title }} *</h2>
       <Carousel :page-id="id" />
-      <h2 style="margin: 3% 0 3%">* {{ cad.title }} *</h2>
-      <p>{{ cad.content }}</p>
-      <img
-        src="/v.png"
-        alt="Vuetify.js"
-        class="mb-5"
-      >
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
+      <p style="text-align:left;margin: 3% 0 3%">{{ cad.content }}</p>
     </v-flex>
   </v-layout>
 </template>

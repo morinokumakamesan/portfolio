@@ -3,8 +3,8 @@
 		<v-carousel
 			cycle
 			interval="3000"
-			hide-delimiter-background
-			show-arrows-on-hover
+			show-arrows=true
+			height="30%"
 		>
 			<v-carousel-item
 				v-for="(src, i) in page.srcs"
@@ -33,8 +33,8 @@ export default {
 					title: 1,
 					id: 1,
 					srcs: [
-						'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
-						'https://cdn.vuetifyjs.com/images/cards/house.jpg'
+						'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E6%AD%A3%E9%9D%A2.jpg',
+						'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E8%83%8C%E9%9D%A2.jpg'
 					]
 				},
 				{

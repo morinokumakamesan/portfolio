@@ -45,14 +45,9 @@ export default {
     return {
       menus: [
         {
-          title: 'app',
-          src: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+          id: '1',
+          src: 'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E6%AD%A3%E9%9D%A2.jpg',
           link: "/3dcads/1"
-        },
-        {
-          title: '3DCAD',
-          src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
-          link: "/3dcads/2"
         },
       ]
     }
