@@ -33,17 +33,6 @@
           </v-card>
           <!-- 4th -->
           <v-timeline dense v-if="profile.history">
-            <!--
-            <v-timeline-item
-              fill-dot
-              class="pink--text mb-12"
-              color="pink"
-            >
-              <div class="py-1">
-                <h2 class="title">2016（4th year University student）</h2>
-              </div>
-            </v-timeline-item>
-            -->
             <v-timeline-item
               v-for="(time, i) in times"
               :key="i"
@@ -59,17 +48,6 @@
         </v-flex>
       </v-layout>
     </v-flex>
-
-    <!-- <v-flex xs6 offset-xs5 offset-md2 offset-lg5>
-      <v-card dark color="secondary">
-        <v-card-text>xs7 offset-(xs5 | md2 | lg5)</v-card-text>
-      </v-card>
-    </v-flex>
-    <v-flex xs12 sm5 md3>
-      <v-card dark color="primary">
-        <v-card-text>(xs12 | sm5 | md3)</v-card-text>
-      </v-card>
-    </v-flex> -->
   </v-layout>
 </template>
 <script>
@@ -151,7 +129,21 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
+          title: '株式会社NTTド◯モ入社',
+        },
+        {
+          color: 'lime',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
           title: 'XRジャム出場（マイスターギルド賞，オニチク賞受賞）',
+        },
+        {
+          color: 'lime',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'ラジオデザインコンテスト応募',
         },
       ],
     }

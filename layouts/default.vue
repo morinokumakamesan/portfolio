@@ -110,12 +110,12 @@ export default {
         },
         {
           icon: 'bubble_chart',
-          title: 'app',
+          title: 'App',
           to: '/app'
         },
         {
           icon: 'bubble_chart',
-          title: 'cad',
+          title: '3DCAD',
           to: '/3dcads'
         }
       ],
