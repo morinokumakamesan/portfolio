@@ -7,31 +7,7 @@
       text-xs-center
       md8
     >
-      <v-carousel
-        cycle
-        height="400"
-        interval="3000"
-        hide-delimiter-background
-        show-arrows-on-hover
-      >
-        <v-carousel-item
-          v-for="(slide, i) in slides"
-          :key="i"
-        >
-          <v-sheet
-            :color="colors[i]"
-            height="100%"
-          >
-            <v-row
-              class="fill-height"
-              align="center"
-              justify="center"
-            >
-              <div class="display-3">{{ slide }} Slide</div>
-            </v-row>
-          </v-sheet>
-        </v-carousel-item>
-      </v-carousel>
+      <Carousel :page-id="id" />
       <h2 style="margin: 3% 0 3%">* {{ cad.title }} *</h2>
       <p>{{ cad.content }}</p>
       <img
@@ -52,7 +28,12 @@
 </template>
 
 <script>
+import Carousel from '~/components/Carousel.vue'
+
 export default {
+  components: {
+    Carousel
+  },
   data(){
     return {
       id: this.$route.params.id,
@@ -67,20 +48,6 @@ export default {
           title: 'second',
           content: ``
         }
-      ],
-      colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
-      ],
-      slides: [
-        'First',
-        'Second',
-        'Third',
-        'Fourth',
-        'Fifth',
       ],
     }
   },
