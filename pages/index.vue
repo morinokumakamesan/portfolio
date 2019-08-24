@@ -38,7 +38,7 @@
               >
                 <v-img
                   :src="menu.src"
-                  class="white--text"
+                  :class="menu.class"
                 >
                   <v-card-title
                     v-text="menu.title"
@@ -68,12 +68,14 @@ export default {
         {
           title: 'APPs',
           src: require("../assets/apps.png"),
-          link: "/apps"
+          link: "/apps",
+          class: "white--text"
         },
         {
           title: '3DCAD',
           src: require("../assets/3dcads.png"),
-          link: "3dcads"
+          link: "3dcads",
+          class: "black--text"
         },
       ]
     }
