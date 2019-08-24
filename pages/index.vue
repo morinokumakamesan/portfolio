@@ -1,6 +1,6 @@
 <template>
   <v-layout
-    justify-center
+    justify-space-around
     align-center
   >
     <v-flex
@@ -10,7 +10,8 @@
     >
       <div class="text-xs-center">
         <logo />
-        <p class="title" style="margin: 2% 0 6%">morinokumakamesan</p>
+        <p class="title" style="margin: 2% 0 0%">morinokumakamesan</p>
+        <v-btn icon style="margin: 1% 0 3%" href="https://github.com/morinokumakamesan"><v-icon>fab fa-github</v-icon></v-btn>
       </div>
       <v-layout
         row
@@ -37,16 +38,14 @@
               >
                 <v-img
                   :src="menu.src"
-                ></v-img>
-                <v-card-title>
-                  <div>
-                    <span class="headline">{{ menu.title }}</span>
-                  </div>
-                  <v-spacer />
-                  <v-btn icon class="mr-0">
-                    <v-icon>mdi-chevron-right</v-icon>
-                  </v-btn>
-                </v-card-title>
+                  class="white--text"
+                >
+                  <v-card-title
+                    v-text="menu.title"
+                    class="fill-height align-end headline"
+                  >
+                  </v-card-title>
+                </v-img>
               </v-card>
             </v-hover>
           </NuxtLink>
@@ -58,24 +57,22 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
     Logo,
-    VuetifyLogo
   },
   data() {
     return {
       menus: [
         {
-          title: 'app',
-          src: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
-          link: "/app"
+          title: 'APPs',
+          src: require("../assets/apps.png"),
+          link: "/apps"
         },
         {
           title: '3DCAD',
-          src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+          src: require("../assets/3dcads.png"),
           link: "3dcads"
         },
       ]

@@ -7,7 +7,7 @@
     <v-flex
       xs12
     >
-      <v-content class="display-2">
+      <v-content class="display-1">
         <em>
           Oops! No Contents...
         </em>

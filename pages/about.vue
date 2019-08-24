@@ -7,8 +7,7 @@
       xs12
       v-for="(profile, i) in profiles"
       :key="i"
-      mt-4
-      mb-1
+      mb-4
     >
       <v-layout
         wrap
@@ -28,7 +27,7 @@
           xs12
         >
           <v-card flat color="grey lighten-3" style="white-space:pre-line; word-wrap:break-word;">
-            <v-card-text class="content" v-if="profile.contact">{{ profile.content }} <br><br> hoge</v-card-text>
+            <v-card-text class="content" v-if="profile.contact">{{ profile.content }}</v-card-text>
             <v-card-text class="content" v-else-if="!profile.history" >{{ profile.content }}</v-card-text>
           </v-card>
           <!-- 4th -->
@@ -95,6 +94,13 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'SPAJAM出場',
+        },
+        {
+          color: 'teal',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'ドコモハッカソン出場（優勝）',
         },
         {
           color: 'light-green',

@@ -104,18 +104,23 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'apps',
+          icon: 'home',
           title: 'Home',
           to: '/'
         },
         {
-          icon: 'bubble_chart',
-          title: 'App',
-          to: '/app'
+          icon: 'person',
+          title: 'About',
+          to: '/about'
         },
         {
-          icon: 'bubble_chart',
-          title: '3DCAD',
+          icon: 'apps',
+          title: 'Apps',
+          to: '/apps'
+        },
+        {
+          icon: 'format_paint',
+          title: '3DCADs',
           to: '/3dcads'
         }
       ],
@@ -129,11 +134,11 @@ export default {
           to: '/about'
         },
         {
-          title: 'app',
-          to: '/app'
+          title: 'apps',
+          to: '/apps'
         },
         {
-          title: 'cad',
+          title: '3dcads',
           to: '/3dcads'
         }
       ],
