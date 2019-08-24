@@ -26,6 +26,7 @@
           sm6
           md4
           pb-4
+          mx-4
           justify-center
         >
           <NuxtLink :to="menu.link" style="text-decoration: none;">
@@ -34,7 +35,7 @@
                 slot-scope="{ hover }"
                 :class="`elevation-${hover ? 12 : 2}`"
                 class="mx-auto"
-                width="80%"
+                width="100%"
               >
                 <v-img
                   :src="menu.src"

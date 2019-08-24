@@ -135,7 +135,7 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: '株式会社NTTド◯モ入社',
+          title: '某通信会社入社',
         },
         {
           color: 'lime',
