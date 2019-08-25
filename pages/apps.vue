@@ -23,7 +23,6 @@
         <v-flex
           px-3
           pt-3
-          pb-1
         >
           <span class="grey--text text--darken-1">{{ app.year}}</span><br>
           <a class="headline" :class='app.class' pb-20 :href="app.to" style="text-decoration: none;">{{ app.title }}</a>
@@ -69,7 +68,7 @@ export default {
           title: 'portfolio',
           year: '2019/08',
           content: `当ポートフォリオです．
-          ポートフォリオポートフォリオ`,
+          `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
           src: require('../assets/apps/portfolio.png'),
