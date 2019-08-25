@@ -42,7 +42,7 @@
         @click.stop="drawer = !drawer"
         class="hidden-md-and-up"
       >
-      <v-icon>menu</v-icon>
+        <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
 
@@ -70,6 +70,7 @@
             router
             flat
             exact
+            outline
           >
           {{ btn.title }}
           </v-btn>

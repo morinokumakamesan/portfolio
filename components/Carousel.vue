@@ -32,9 +32,9 @@ export default {
 				{
 					title: 1,
 					id: 1,
-					srcs: [
-						'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E6%AD%A3%E9%9D%A2.jpg',
-						'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E8%83%8C%E9%9D%A2.jpg'
+          srcs: [
+						require("../assets/3dcads/radio/front.jpg"),
+						require("../assets/3dcads/radio/back.jpg"),
 					]
 				},
 				{

@@ -12,6 +12,7 @@
       sm6
       md4
       pb-4
+      mx-4
       justify-center
     >
       <NuxtLink :to="menu.link" style="text-decoration: none;">
@@ -20,7 +21,7 @@
             slot-scope="{ hover }"
             :class="`elevation-${hover ? 12 : 2}`"
             class="mx-auto"
-            width="80%"
+            width="100%"
           >
             <v-img
               :src="menu.src"
@@ -40,7 +41,7 @@ export default {
       menus: [
         {
           id: '1',
-          src: 'https://3d-cad.s3.amazonaws.com/Radio/%E3%83%A9%E3%82%B7%E3%82%99%E3%82%AA%E6%AD%A3%E9%9D%A2.jpg',
+          src: require("../../assets/3dcads/radio/front.jpg"),
           link: "/3dcads/1"
         },
       ]
