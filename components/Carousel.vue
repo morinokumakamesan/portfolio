@@ -5,6 +5,7 @@
 			interval="3000"
 			show-arrows=true
 			height="30%"
+			hide-delimiters
 		>
 			<v-carousel-item
 				v-for="(src, i) in page.srcs"
@@ -41,8 +42,9 @@ export default {
 					title: 2,
 					id: 2,
 					srcs: [
-						'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
-						'https://cdn.vuetifyjs.com/images/cards/house.jpg'
+						require("../assets/3dcads/kokuyo2019/1.png"),
+						require("../assets/3dcads/kokuyo2019/2.png"),
+						require("../assets/3dcads/kokuyo2019/3.png"),
 					]
 				},
       ],

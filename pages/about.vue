@@ -57,7 +57,8 @@ export default {
         {
           title: 'about',
           content: `熊本育ち．東京在住．
-            現在IoTスマートホームの商用化に携わりながら，趣味で3DCADやデータサイエンスを触っています．`,
+            現在IoTスマートホームの開発・商用化に携わりながら，趣味で3DCADやデータサイエンスを触っています．
+            生体・医療工学の分野にも興味があります．`,
           contact: false,
           history: false,
         },
@@ -150,6 +151,13 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ラジオデザインコンテスト応募',
+        },
+        {
+          color: 'lime',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'KOKUYO DESIGN AWARD 2019 応募',
         },
       ],
     }

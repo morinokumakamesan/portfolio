@@ -7,8 +7,8 @@
       text-xs-center
       md8
     >
-      <h2 style="margin: 3% 0 2%">* {{ cad.title }} *</h2>
       <Carousel :page-id="id" />
+      <h2 style="margin: 3% 0 2%">* {{ cad.title }} *</h2>
       <p style="text-align:left;margin: 3% 0 3%">{{ cad.content }}</p>
     </v-flex>
   </v-layout>
@@ -32,8 +32,8 @@ export default {
         },
         {
           id: '2',
-          title: 'second',
-          content: ``
+          title: 'トンツーシャチハタ',
+          content: `あなたは人に想いを届けるとき，どのように伝えていますか？直接，電話，手紙，SNS.しかし想いは伝えたいけど，伝えるのは恥ずかしい．そしてどうしても周りにもばれたくない．そんなとき，手軽にトンツーで想いを表現できる文具を用意しました．決してずれのない想いを贈りたいあなたへ．`
         }
       ],
     }

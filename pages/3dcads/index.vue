@@ -44,6 +44,11 @@ export default {
           src: require("../../assets/3dcads/radio/front.jpg"),
           link: "/3dcads/1"
         },
+        {
+          id: '2',
+          src: require("../../assets/3dcads/kokuyo2019/1.png"),
+          link: "/3dcads/2"
+        },
       ]
     }
   }
