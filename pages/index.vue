@@ -10,7 +10,7 @@
     >
       <div class="text-xs-center">
         <logo />
-        <p class="title" style="margin: 2% 0 0%">morinokumakamesan</p>
+        <p class="title" style="margin: 2% 0 0%">Eiji Kumakawa</p>
         <v-btn icon style="margin: 1% 0 3%" href="https://github.com/morinokumakamesan"><v-icon>fab fa-github</v-icon></v-btn>
       </div>
       <v-layout

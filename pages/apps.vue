@@ -24,7 +24,7 @@
           px-3
           pt-3
         >
-          <span class="grey--text text--darken-1">{{ app.year}}</span><br>
+          <span class="grey--text text--darken-1">{{ app.year }}</span><br>
           <a class="headline" :class='app.class' pb-20 :href="app.to" style="text-decoration: none;">{{ app.title }}</a>
           <v-btn icon style="margin: 1% 0 3%" :href="app.github"><v-icon size="20px">fab fa-github</v-icon></v-btn>
         </v-flex>
