@@ -1,14 +1,19 @@
 <template>
   <v-layout
+    row
     justify-center
     align-center
+    wrap
   >
     <v-flex
       v-for="(app, i) in apps"
       :key="i"
       xs12
+      sm6
       md4
+      pb-4
       mx-4
+      justify-center
     >
       <v-card
         class="mx-auto"
