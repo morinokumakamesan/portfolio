@@ -78,9 +78,30 @@ export default {
               title: 'Nuxt.js',
               color: 'green'
             },
+          ],
+        },
+        {
+          title: '忘年会クイズアプリ',
+          year: '2019/12',
+          content: `100人規模の部署忘年会で使用しました．
+          `,
+          class: 'green--text text--darken-2',
+          pos: 'fill-height', //下：'fill-height'
+          src: require('../assets/apps/quiz.png'),
+          to: 'https://quiz-si-2019.herokuapp.com/',
+          github: 'https://github.com/yuzukuma/Quiz',
+          chips: [
             {
-              title: 'Netlify',
-              color: 'teal'
+              title: 'Nuxt.js',
+              color: 'green'
+            },
+            {
+              title: 'Node.js',
+              color: 'light-green'
+            },
+            {
+              title: 'socket.io',
+              color: 'cyan'
             },
           ],
         },
