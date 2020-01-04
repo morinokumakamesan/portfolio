@@ -57,7 +57,6 @@
       class="hidden-sm-and-down"
     >
       <v-layout row justify-center>
-        <!-- <img src="~assets/bar.png" @click="goHome"> -->
         <!-- <v-toolbar-title class="headline" @click="goHome" v-text="title"/> -->
         <v-toolbar-title class="bar" @click="goHome" v-text="title"/>
       </v-layout>
