@@ -35,7 +35,7 @@
       app
       class="hidden-md-and-up"
     >
-      <v-toolbar-title v-text="title"/>
+      <v-toolbar-title @click="goHome" v-text="title"/>
       <v-spacer />
       <v-btn
         icon
@@ -53,13 +53,14 @@
       fixed
       flat
       app
-      dense
       extended
       class="hidden-sm-and-down"
     >
-    <v-layout row justify-center>
-      <v-toolbar-title class="headline" v-text="title"/>
-    </v-layout>
+      <v-layout row justify-center>
+        <!-- <img src="~assets/bar.png" @click="goHome"> -->
+        <!-- <v-toolbar-title class="headline" @click="goHome" v-text="title"/> -->
+        <v-toolbar-title class="bar" @click="goHome" v-text="title"/>
+      </v-layout>
       <template #extension>
         <v-layout row justify-center>
           <v-btn 
@@ -145,8 +146,20 @@ export default {
       ],
       miniVariant: false,
       right: false,
-      title: 'portfolio'
+      title: 'Eiji Kumakawa'
+    }
+  },
+  methods: {
+    goHome() {
+      this.$router.push('/')
     }
   }
 }
 </script>
+
+<style scoped>
+.bar {
+  font-size: 30px;
+  font-family: 'Muli', sans-serif;
+}
+</style>

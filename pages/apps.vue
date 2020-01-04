@@ -18,8 +18,7 @@
         <v-img
           height="200px"
           :src='app.src'
-        >
-        </v-img>
+        />
         <v-flex
           px-3
           pt-3

@@ -23,6 +23,11 @@ export default {
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Muli&display=swap'
+      },
       { rel: 'stylesheet',
         href:
           'https://use.fontawesome.com/releases/v5.6.1/css/all.css'  
