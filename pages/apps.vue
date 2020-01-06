@@ -14,6 +14,7 @@
       pb-4
       mx-4
       justify-center
+      class="row"
     >
       <v-card
         class="mx-auto"
@@ -88,7 +89,8 @@ export default {
         {
           title: '忘年会クイズアプリ',
           year: '2019/12',
-          content: `100人規模の部署忘年会で使用しました．
+          content: `お手元のスマホから参加できるオールスター感謝祭風のアプリです．
+          100人規模の部署忘年会で使用しました．
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
@@ -115,3 +117,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.row {
+	align-items: flex-start;
+}
+</style>
