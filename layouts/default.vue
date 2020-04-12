@@ -160,5 +160,6 @@ export default {
 .bar {
   font-size: 30px;
   font-family: 'Muli', sans-serif;
+  cursor: pointer;
 }
 </style>
