@@ -119,6 +119,23 @@ export default {
             },
           ],
         },
+        {
+          title: '杉本孔明Official',
+          year: '2019/12',
+          content: `シンガーソングライターとして活躍する杉本孔明のOfficialサイトを立ち上げました．
+          `,
+          class: 'green--text text--darken-2',
+          pos: 'fill-height',
+          src: require('../assets/apps/komei.png'),
+          to: 'https://komei-official.netlify.app/',
+          github: 'https://github.com/morinokumakamesan/komei-official',
+          chips: [
+            {
+              title: 'Nuxt.js',
+              color: 'green'
+            },
+          ],
+        },
       ]
     }
   }
