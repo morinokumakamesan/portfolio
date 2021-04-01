@@ -58,7 +58,7 @@ export default {
           title: 'about',
           content: `熊本育ち．東京在住．
             現在IoTスマートホームの研究開発・商用化に携わりながら，趣味で3DCADによるプロダクトデザインやデータ分析をしています．
-            医療・福祉分野に貢献したいという思いがあります．`,
+            医療分野に貢献したいという思いがあります．`,
           contact: false,
           history: false,
         },
@@ -172,6 +172,13 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'Youtube動画視聴回数予測コンペ 136位',
+        },
+        {
+          color: 'amber',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'ISUCON10参加',
         },
       ],
     }
