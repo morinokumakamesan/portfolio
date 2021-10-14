@@ -57,8 +57,8 @@ export default {
         {
           title: 'about',
           content: `熊本育ち．東京在住．
-            現在IoTスマートホームの研究開発・商用化に携わりながら，趣味で3DCADによるプロダクトデザインやデータ分析をしています．
-            医療分野に貢献したいという思いがあります．`,
+            現在バイタルデータ分析やスマートシティ検討の業務に携わりながら，プライベートで3DCADによるプロダクトデザインやデータ分析をしています．
+            医療分野・エンターテインメント分野に貢献したいという思いがあります．`,
           contact: false,
           history: false,
         },
@@ -157,7 +157,7 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: 'KOKUYO DESIGN AWARD 2019 応募',
+          title: 'KOKUYO DESIGN AWARD 2020 応募',
         },
         {
           color: 'amber',
@@ -179,6 +179,27 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ISUCON10参加',
+        },
+        {
+          color: 'orange',
+          small: false,
+          fill: false,
+          activeClass: 'year',
+          title: '2021',
+        },
+        {
+          color: 'orange',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'Ubicomp 2021 Poster',
+        },
+        {
+          color: 'orange',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'NoCodeBotリリース',
         },
       ],
     }
