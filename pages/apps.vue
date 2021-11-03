@@ -77,15 +77,14 @@ export default {
     return {
       apps: [
         {
-          title: 'portfolio',
-          year: '2019/08',
-          content: `当ポートフォリオです．
+          title: 'NocodeBot',
+          year: '2021/10',
+          content: `Excelでチャットボットを簡単に作成できるサービスをリリース．
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
-          src: require('../assets/apps/portfolio.png'),
-          to: 'https://morinokumakamesan.netlify.com',
-          github: 'https://github.com/morinokumakamesan/portfolio',
+          src: require('../assets/apps/nocodebot.png'),
+          to: 'https://www.nocode-bot.com/',
           chips: [
             {
               title: 'Nuxt.js',
@@ -129,6 +128,23 @@ export default {
           src: require('../assets/apps/komei.png'),
           to: 'https://komei-official.netlify.app/',
           github: 'https://github.com/morinokumakamesan/komei-official',
+          chips: [
+            {
+              title: 'Nuxt.js',
+              color: 'green'
+            },
+          ],
+        },
+        {
+          title: 'portfolio',
+          year: '2019/08',
+          content: `当ポートフォリオです．
+          `,
+          class: 'green--text text--darken-2',
+          pos: 'fill-height', //下：'fill-height'
+          src: require('../assets/apps/portfolio.png'),
+          to: 'https://morinokumakamesan.netlify.com',
+          github: 'https://github.com/morinokumakamesan/portfolio',
           chips: [
             {
               title: 'Nuxt.js',
