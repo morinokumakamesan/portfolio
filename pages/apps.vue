@@ -36,7 +36,7 @@
             <span class="grey--text text--darken-1">{{ app.year }}</span><br>
             <!-- <a class="headline" :class='app.class' pb-20 :href="app.to" style="text-decoration: none;">{{ app.title }}</a> -->
             <div class="headline" :class='app.class' pb-20>{{ app.title }}</div>
-            <v-btn icon style="margin: 1% 0 3%" :href="app.github"><v-icon size="20px">fab fa-github</v-icon></v-btn>
+            <v-btn icon style="margin: 1% 0 3%" :href="app.github" v-if="app.github"><v-icon size="20px">fab fa-github</v-icon></v-btn>
           </v-flex>
 
           <v-card-text style="white-space:pre-line; word-wrap:break-word;">
