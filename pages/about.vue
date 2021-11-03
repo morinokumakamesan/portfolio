@@ -40,7 +40,7 @@
               :fill-dot="time.fill"
             >
               <div class="py-1">
-                <h2 :class="`${time.activeClass} ${time.color}--text text--darken-3`">{{ time.title }}</h2>
+                <a :href="time.link" :class="`${time.activeClass} ${time.color}--text text--darken-3`">{{ time.title }}</a>
               </div>
             </v-timeline-item>
           </v-timeline>
@@ -94,7 +94,8 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: 'SPAJAM出場',
+          title: 'SPAJAM 2017 出場',
+          link: 'https://history.spajam.jp/2017/',
         },
         {
           color: 'teal',
@@ -115,14 +116,16 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: 'SPAJAM出場（優秀賞受賞）',
+          title: 'SPAJAM 2018 出場（優秀賞受賞）',
+          link: 'https://history.spajam.jp/2018/',
         },
         {
           color: 'light-green',
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: 'JPHACKS出場（ローカルスポンサー賞受賞）',
+          title: 'JPHACKS 2018 出場（ローカルスポンサー賞受賞）',
+          link: 'https://jphacks.com/2018/',
         },
         {
           color: 'lime',
@@ -143,7 +146,8 @@ export default {
           small: true,
           fill: true,
           activeClass: 'timeContent font-weight-light',
-          title: 'XRジャム出場（マイスターギルド賞，オニチク賞受賞）',
+          title: 'XRジャム2019 出場（マイスターギルド賞，オニチク賞受賞）',
+          link: 'https://osaka-driven-dev.connpass.com/event/127120/',
         },
         {
           color: 'lime',
@@ -151,6 +155,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ラジオデザインコンテスト応募',
+          link: 'https://compe.japandesign.ne.jp/hisatomi-radiocompe-2019/',
         },
         {
           color: 'lime',
@@ -158,6 +163,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'KOKUYO DESIGN AWARD 2020 応募',
+          link: 'https://www.kokuyo.co.jp/award/archive/prizepast/2020.html',
         },
         {
           color: 'amber',
@@ -172,6 +178,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'Youtube動画視聴回数予測コンペ 136位',
+          link: 'https://comp.probspace.com/competitions/youtube-view-count',
         },
         {
           color: 'amber',
@@ -179,6 +186,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ISUCON10参加',
+          link: 'https://isucon.net/archives/54704557.html',
         },
         {
           color: 'orange',
@@ -193,6 +201,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'Ubicomp 2021 Poster',
+          link: 'https://dl.acm.org/doi/10.1145/3460418.3479308',
         },
         {
           color: 'orange',
@@ -200,6 +209,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'NoCodeBotリリース',
+          link: 'https://prtimes.jp/main/html/rd/p/000000001.000086570.html',
         },
       ],
     }
