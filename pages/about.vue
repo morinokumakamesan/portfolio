@@ -56,15 +56,16 @@ export default {
       profiles: [
         {
           title: 'about',
-          content: `熊本育ち．東京在住．
-            現在バイタルデータ分析やスマートシティ検討の業務に携わりながら，プライベートで3DCADによるプロダクトデザインやデータ分析をしています．
-            医療分野・エンターテインメント分野に貢献したいという思いがあります．`,
+          content: `熊本育ち。東京在住。
+            本業では睡眠時のバイタルデータ分析やドローンの研究開発に従事しています。
+            その傍らプライベートでWebアプリ開発の業務委託を受けたり、趣味でプロダクトデザインやサッカーのデータ分析をしています。
+            人間工学からエンターテインメントに関わるHCI（Human Computer Interaction）分野まで幅広い分野に興味があります。`,
           contact: false,
           history: false,
         },
         {
           title: 'skill',
-          content: `HTML, CSS, Vue, Nuxt, JQuery, Ruby, Rails, Python, XD, Fusion360`,
+          content: `HTML, CSS, Vue, Nuxt.js, Node.js, jQuery, Ruby, Rails, Python, Flask, XD, Fusion360, Ardupilot`,
           contact: false,
           history: false,
         },

@@ -10,8 +10,9 @@
     >
       <div class="text-xs-center">
         <logo />
-        <p class="title" style="margin: 2% 0 0%; color: gray;">Web Engineering & Design</p>
+        <p class="title" style="margin: 2% 0 0%; color: gray;">Web Engineering & Product Design</p>
         <v-btn icon style="margin: 1% 0 3%" href="https://github.com/morinokumakamesan"><v-icon>fab fa-github</v-icon></v-btn>
+        <v-btn icon style="margin: 1% 0 3%" href="https://www.linkedin.com/in/eiji-kumakawa/"><v-icon>fab fa-linkedin </v-icon></v-btn>
       </div>
       <v-layout
         row

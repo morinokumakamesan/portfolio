@@ -79,7 +79,7 @@ export default {
         {
           title: 'NocodeBot',
           year: '2021/10',
-          content: `Excelでチャットボットを簡単に作成できるサービスをリリース．
+          content: `Excelでチャットボットを簡単に作成できるサービスをリリース。
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
@@ -95,8 +95,8 @@ export default {
         {
           title: '忘年会クイズアプリ',
           year: '2019/12',
-          content: `お手元のスマホから参加できるオールスター感謝祭風のアプリです．
-          100人規模の部署忘年会で使用しました．
+          content: `お手元のスマホから参加できるオールスター感謝祭風のアプリです。
+          100人規模の部署忘年会で使用しました。
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
@@ -121,7 +121,7 @@ export default {
         {
           title: '杉本孔明Official',
           year: '2019/12',
-          content: `シンガーソングライターとして活躍する杉本孔明のOfficialサイトを立ち上げました．
+          content: `シンガーソングライターとして活躍する杉本孔明のOfficialサイトを立ち上げました。
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height',
@@ -138,7 +138,7 @@ export default {
         {
           title: 'portfolio',
           year: '2019/08',
-          content: `当ポートフォリオです．
+          content: `当ポートフォリオです。
           `,
           class: 'green--text text--darken-2',
           pos: 'fill-height', //下：'fill-height'
