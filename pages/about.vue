@@ -155,7 +155,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ラジオデザインコンテスト応募',
-          link: 'https://compe.japandesign.ne.jp/hisatomi-radiocompe-2019/',
+          link: 'http://localhost:3000/3dcads/1',
         },
         {
           color: 'lime',
@@ -163,7 +163,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'KOKUYO DESIGN AWARD 2020 応募',
-          link: 'https://www.kokuyo.co.jp/award/archive/prizepast/2020.html',
+          link: 'http://localhost:3000/3dcads/2',
         },
         {
           color: 'amber',
@@ -210,6 +210,21 @@ export default {
           activeClass: 'timeContent font-weight-light',
           title: 'NoCodeBotリリース',
           link: 'https://prtimes.jp/main/html/rd/p/000000001.000086570.html',
+        },
+        {
+          color: 'deep-orange',
+          small: false,
+          fill: false,
+          activeClass: 'year',
+          title: '2022',
+        },
+        {
+          color: 'deep-orange',
+          small: true,
+          fill: true,
+          activeClass: 'timeContent font-weight-light',
+          title: 'TOKYO MIDTOWN AWARD 2022応募',
+          link: 'http://localhost:3000/3dcads/3',
         },
       ],
     }
