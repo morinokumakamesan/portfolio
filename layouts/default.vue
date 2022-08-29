@@ -121,7 +121,7 @@ export default {
         },
         {
           icon: 'format_paint',
-          title: '3DCADs',
+          title: 'Product Design',
           to: '/3dcads'
         }
       ],
@@ -139,7 +139,7 @@ export default {
           to: '/apps'
         },
         {
-          title: '3dcads',
+          title: 'Product Design',
           to: '/3dcads'
         }
       ],

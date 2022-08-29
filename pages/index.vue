@@ -73,7 +73,7 @@ export default {
           class: "white--text"
         },
         {
-          title: '3DCAD',
+          title: 'Product Design',
           src: require("../assets/3dcads.png"),
           link: "3dcads",
           class: "black--text"
