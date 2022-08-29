@@ -29,11 +29,11 @@ export default {
 		return {
 			id: this.pageId,
 			pd: 10,
-      pages: [
+			pages: [
 				{
 					title: 1,
 					id: 1,
-          srcs: [
+					srcs: [
 						require("../assets/3dcads/radio/front.jpg"),
 						require("../assets/3dcads/radio/back.jpg"),
 					]
@@ -45,6 +45,13 @@ export default {
 						require("../assets/3dcads/kokuyo2019/1.png"),
 						require("../assets/3dcads/kokuyo2019/2.png"),
 						require("../assets/3dcads/kokuyo2019/3.png"),
+					]
+				},
+				{
+					title: 3,
+					id: 3,
+					srcs: [
+						require("../assets/3dcads/tma2022/TangibleAroma.png"),
 					]
 				},
       ],

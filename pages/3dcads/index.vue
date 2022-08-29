@@ -49,6 +49,11 @@ export default {
           src: require("../../assets/3dcads/kokuyo2019/1.png"),
           link: "/3dcads/2"
         },
+        {
+          id: '3',
+          src: require("../../assets/3dcads/tma2022/TangibleAroma.png"),
+          link: "/3dcads/3"
+        },
       ]
     }
   }
