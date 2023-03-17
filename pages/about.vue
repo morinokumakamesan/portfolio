@@ -156,7 +156,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'ラジオデザインコンテスト応募',
-          link: 'http://localhost:3000/3dcads/1',
+          link: 'https://morinokumakamesan.netlify.app/3dcads/1',
         },
         {
           color: 'lime',
@@ -164,7 +164,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'KOKUYO DESIGN AWARD 2020 応募',
-          link: 'http://localhost:3000/3dcads/2',
+          link: 'https://morinokumakamesan.netlify.app/3dcads/2',
         },
         {
           color: 'amber',
@@ -225,7 +225,7 @@ export default {
           fill: true,
           activeClass: 'timeContent font-weight-light',
           title: 'TOKYO MIDTOWN AWARD 2022応募',
-          link: 'http://localhost:3000/3dcads/3',
+          link: 'https://morinokumakamesan.netlify.app/3dcads/3',
         },
       ],
     }
