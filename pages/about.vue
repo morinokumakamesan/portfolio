@@ -56,7 +56,7 @@ export default {
       profiles: [
         {
           title: 'About',
-          content: `本業ではAI✕ヘルスケア関連の研究開発に従事。
+          content: `本業ではAI×ヘルスケア関連の研究開発に従事。
             その傍らプライベートでWebアプリ開発の業務委託を受けたり、趣味でプロダクトデザインやサッカーのデータ分析をしています。
             主にHCI（Human Computer Interaction）分野に野に興味があります。`,
           contact: false,
