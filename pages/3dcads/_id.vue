@@ -69,7 +69,7 @@ export default {
           id: '4',
           title: 'VLetter',
           url: 'https://sndc.design/award/?y=2024',
-          link: 'TOKYO MIDTOWN AWARD 2022',
+          link: '17th SHACHIHATA NEW Product Design Award',
           theme: '可視化するしるし',
           content: `あなたの声を唯一無二の “しるし” として、手紙に残すことができるサービスです。
           この “しるし” はスマホアプリで読み込むことで声を再生することができます。

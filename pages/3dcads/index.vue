@@ -54,6 +54,11 @@ export default {
           src: require("../../assets/3dcads/tma2022/TangibleAroma.png"),
           link: "/3dcads/3"
         },
+        {
+          id: '4',
+          src: require("../../assets/3dcads/sndc2024/VLetter.png"),
+          link: "/3dcads/4"
+        },
       ]
     }
   }
